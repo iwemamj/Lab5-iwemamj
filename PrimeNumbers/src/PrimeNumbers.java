@@ -5,9 +5,8 @@ public class PrimeNumbers {
 		ArrayList<Integer> ret = new ArrayList<Integer>();
 
 		for (int canidate = 2; n > 1; canidate++) {
-			while (n % canidate == 0) {
+			for (; n % canidate == 0; n /= canidate) {
 				ret.add(canidate);
-				n /= canidate;
 			}
 		}
 
