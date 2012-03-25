@@ -46,6 +46,12 @@ public class PrimeGenerationTest {
 		assertEquals(list(2,3,5,7),PrimeGeneration.findPrime(8));
 	}
 	
+	@Test
+	public void testThatFindPrimeFindsPrimesLessThanOneHundred(){
+		assertEquals(list(2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97),PrimeGeneration.findPrime(100));
+	}
+		
+	
 	private ArrayList<Integer> list(int... ints) {
 		ArrayList<Integer> ret = new ArrayList<Integer>();
 		for (int i : ints) {
