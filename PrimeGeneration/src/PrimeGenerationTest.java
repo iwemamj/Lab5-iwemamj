@@ -31,6 +31,11 @@ public class PrimeGenerationTest {
 		assertEquals(list(2, 3),PrimeGeneration.findPrime(4));
 	}
 	
+	@Test
+	public void testThatFindPrimeFindsPrimesLessThanFive(){
+		assertEquals(list(2,3),PrimeGeneration.findPrime(5));
+	}
+	
 	
 	private ArrayList<Integer> list(int... ints) {
 		ArrayList<Integer> ret = new ArrayList<Integer>();
