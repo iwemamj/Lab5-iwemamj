@@ -20,4 +20,17 @@ public class PrimeGenerationTest {
 	public void testThatFindPrimeFindsPrimesLessThanTwo(){
 		assertEquals(new ArrayList<Integer>(),PrimeGeneration.findPrime(2));
 	}
+	
+	@Test
+	public void testThatFindPrimeFindsPrimesLessThanThree(){
+		assertEquals(list(2),PrimeGeneration.findPrime(3));
+	}
+	
+	private ArrayList<Integer> list(int... ints) {
+		ArrayList<Integer> ret = new ArrayList<Integer>();
+		for (int i : ints) {
+			ret.add(i);
+		}
+		return ret;
+	}
 }
