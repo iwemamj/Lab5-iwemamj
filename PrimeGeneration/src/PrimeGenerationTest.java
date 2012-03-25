@@ -1,4 +1,5 @@
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import java.util.ArrayList;
 
@@ -12,7 +13,11 @@ public class PrimeGenerationTest {
 	
 	@Test
 	public void testOne(){
-		assertEquals(new ArrayList<Integer>(),PrimeGeneration.FindPrime(1));
+		assertEquals(new ArrayList<Integer>(),PrimeGeneration.findPrime(1));
 	}
 
+	@Test
+	public void testThatFindPrimeFindsPrimesLessThanTwo(){
+		assertEquals(new ArrayList<Integer>(),PrimeGeneration.findPrime(2));
+	}
 }
